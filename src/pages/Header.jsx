@@ -42,7 +42,7 @@ const Header = () => {
       <div className="max-w-screen-xl mx-auto py-2 px-4 md:px-12">
         <h1 className="font-bold text-2xl mt-2">Add a new address</h1>
         <div className="dropdown py-6">
-          <select className="dropdown-select py-3 px-2 w-full rounded">
+          <select className="dropdown-select py-3 px-2 w-full rounded text-black bg-[#f0f2f2] shadow-md">
             <option value="">Select Country</option>
             {countries.map((country) => (
               <option key={country.code} value={country.code}>
@@ -146,7 +146,7 @@ const Header = () => {
           />
         </div>
         <div className="dropdown py-6">
-          <select className="dropdown-select py-3 px-2 w-full rounded">
+          <select className="dropdown-select py-3 px-2 w-full rounded bg-[#f0f2f2] shadow-md">
             <option value="">Select State</option>
             {state.map((stat) => (
               <option key={stat.code} value={stat.code}>
@@ -177,7 +177,7 @@ const Header = () => {
           <label htmlFor="flatNo" className="font-semibold ml-1">
             Address Type
           </label>{" "}
-          <select className="dropdown-select py-3 px-2 w-full rounded">
+          <select className="dropdown-select py-3 px-2 w-full rounded bg-[#f0f2f2] shadow-md">
             <option value="">Select an Address Type</option>
             {address.map((addres) => (
               <option key={addres.code} value={addres.code}>
